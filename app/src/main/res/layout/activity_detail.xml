@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/ivPod"
+        android:layout_width="234dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvPodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="PodcastName"
+        app:layout_constraintEnd_toEndOf="@+id/ivPod"
+        app:layout_constraintStart_toStartOf="@+id/ivPod"
+        app:layout_constraintTop_toBottomOf="@+id/ivPod" />
+
+    <TextView
+        android:id="@+id/tvChanName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ChannelName"
+        app:layout_constraintEnd_toEndOf="@+id/tvPodName"
+        app:layout_constraintStart_toStartOf="@+id/tvPodName"
+        app:layout_constraintTop_toBottomOf="@+id/tvPodName" />
+
+    <TextView
+        android:id="@+id/tvPodYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Year"
+        app:layout_constraintEnd_toEndOf="@+id/tvChanName"
+        app:layout_constraintStart_toStartOf="@+id/tvChanName"
+        app:layout_constraintTop_toBottomOf="@+id/tvChanName" />
+
+    <TextView
+        android:id="@+id/tvPodLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Duration"
+        app:layout_constraintEnd_toEndOf="@+id/tvPodYear"
+        app:layout_constraintStart_toStartOf="@+id/tvPodYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvPodYear" />
+
+    <TextView
+        android:id="@+id/tvPodSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Summary"
+        app:layout_constraintEnd_toEndOf="@+id/tvPodDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvPodDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvPodDescription" />
+
+    <TextView
+        android:id="@+id/tvPodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/tvPodLength"
+        app:layout_constraintStart_toStartOf="@+id/tvPodLength"
+        app:layout_constraintTop_toBottomOf="@+id/tvPodLength" />
+</androidx.constraintlayout.widget.ConstraintLayout>
